@@ -14,14 +14,15 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            TopSection(),
+            SizedBox(height: kDefaultPadding * 2),
+            AboutSection(),
+            //SizedBox(height: kDefaultPadding * 2),
             ContactSection(),
-            // //TopSection(),
-            // //SizedBox(height: kDefaultPadding * 2),
-            // AboutSection(),
-            // ServiceSection(),
-            // RecentWorkSection(),
+            ServiceSection(),
+            RecentWorkSection(),
+            SizedBox(height: kDefaultPadding * 2),
             TestemonialSection(),
-            SizedBox(height: 500),
           ],
         ),
       ),
