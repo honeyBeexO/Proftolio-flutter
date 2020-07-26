@@ -32,7 +32,7 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
         duration: _duration,
         width: 540.0,
         height: 320.0,
-        margin: EdgeInsets.only(top: kDefaultPadding * 6),
+        // margin: EdgeInsets.only(top: kDefaultPadding * 6),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10.0),

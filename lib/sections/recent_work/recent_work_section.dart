@@ -29,6 +29,7 @@ class RecentWorkSection extends StatelessWidget {
             subTitle: 'My Strong Arenas',
             color: Color(0xffFFB100),
           ),
+          SizedBox(height: kDefaultPadding * 6),
           SizedBox(
             width: 1110.0,
             child: Wrap(
