@@ -12,12 +12,15 @@ class MyOutlineButton extends StatelessWidget {
     return FittedBox(
       child: OutlineButton(
         onPressed: this.onPress,
+        // color: Color(0xffDFA3FF).withOpacity(0.9),
+        // focusColor: Color(0xffDFA3FF).withOpacity(0.9),
+        // disabledBorderColor: Colors.black.withOpacity(0.9),
         padding: EdgeInsets.symmetric(
           vertical: kDefaultPadding,
           horizontal: kDefaultPadding * 2.5,
         ),
         borderSide: BorderSide(
-          color: Color(0xffEDEDED),
+          color: Color(0xffDFA3FF).withOpacity(0.45), //Color(0xffEDEDED),
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50.0),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolioweb/components/default_button.dart';
 import 'package:portfolioweb/components/my_outline_button.dart';
 import 'package:portfolioweb/constants.dart';
 import 'package:portfolioweb/sections/about/components/about_section_text.dart';
@@ -32,11 +33,24 @@ class AboutSection extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: kDefaultPadding * 2),
-          MyOutlineButton(
-            text: 'Hire Me!',
-            imageURL: 'images/hand.png',
-            onPress: () {},
+          SizedBox(height: kDefaultPadding * 3),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              MyOutlineButton(
+                text: 'Hire Me!',
+                imageURL: 'images/hand.png',
+                onPress: () {},
+              ),
+              SizedBox(width: kDefaultPadding * 1.5),
+              DefaultButton(
+                text: 'Download CV!',
+                imageURL: 'images/download.png',
+                onTap: () {
+                  print('Getting hired...');
+                },
+              ),
+            ],
           ),
         ],
       ),
