@@ -39,7 +39,7 @@ class GlassContent extends StatelessWidget {
               Text('Web & Mobile apps dev',
                   style: Theme.of(context)
                       .textTheme
-                      .headline5
+                      .headline4
                       .copyWith(color: Colors.white)),
             ],
           ),
