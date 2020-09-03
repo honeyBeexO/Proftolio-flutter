@@ -34,15 +34,17 @@ class TopSection extends StatelessWidget {
                     child: PersonPic(),
                   )
                 : SizedBox(width: 2),
-            Positioned(
-              right: 0.0,
-              left: 0.0,
-              bottom: 0.0,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Menu(),
-              ),
-            ),
+            SizeConfig.screenWidth > 600
+                ? Positioned(
+                    right: 0.0,
+                    left: 0.0,
+                    bottom: 0.0,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Menu(),
+                    ),
+                  )
+                : SizedBox(width: 2),
           ],
         ),
       ),
