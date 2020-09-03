@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolioweb/components/default_button.dart';
 import 'package:portfolioweb/constants.dart';
 import 'package:portfolioweb/sections/contact/components/social_card.dart';
+import 'package:portfolioweb/size_config.dart';
 
 class ContactBox extends StatelessWidget {
   const ContactBox({
@@ -65,13 +66,15 @@ class ContactForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double _fieldWidth =
+        SizeConfig.screenWidth > 800 ? 470 : SizeConfig.screenWidth * 0.8;
     return Form(
       child: Wrap(
         spacing: kDefaultPadding * 2.5,
         runSpacing: kDefaultPadding * 1.5,
         children: [
           SizedBox(
-            width: 470.0,
+            width: _fieldWidth,
             child: TextFormField(
               onChanged: (value) {
                 print(value);
@@ -83,7 +86,7 @@ class ContactForm extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 470.0,
+            width: _fieldWidth,
             child: TextFormField(
               onChanged: (value) {
                 print(value);
@@ -95,7 +98,7 @@ class ContactForm extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 470.0,
+            width: _fieldWidth,
             child: TextFormField(
               onChanged: (value) {
                 print(value);

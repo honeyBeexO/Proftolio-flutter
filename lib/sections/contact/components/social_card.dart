@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:portfolioweb/constants.dart';
+import 'package:portfolioweb/size_config.dart';
 
 class SocialCard extends StatefulWidget {
   final String text;
@@ -52,8 +53,8 @@ class _SocialCardState extends State<SocialCard> {
             children: [
               Image.network(
                 widget.imageURL,
-                height: 80,
-                width: 80,
+                height: getProportionateScreenHeight(40),
+                width: getProportionateScreenWidth(30),
               ),
               // Image.asset(
               //   this.widget.imageURL ?? 'assets/images/email.png',
