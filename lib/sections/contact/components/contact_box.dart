@@ -26,24 +26,27 @@ class ContactBox extends StatelessWidget {
           Wrap(
             //mainAxisAlignment: MainAxisAlignment.spaceBetween,
             spacing: kDefaultPadding * 2,
+            runSpacing: kDefaultPadding * 2,
             children: [
               SocialCard(
                 text: 'nouhben',
                 imageURL: 'https://img.icons8.com/color/48/000000/github-2.png',
-                color: Color(0xffD9FFFC),
+                color: Color(0xffE8F0F9),
                 onPress: () {},
               ),
               SocialCard(
                 text: 'nouhben',
                 imageURL:
                     'https://img.icons8.com/cotton/64/000000/facebook-messenger--v4.png',
-                color: Color(0xffE4FFC7),
+                color: Color(0xffD9FFFC),
+                onPress: () {},
               ),
               SocialCard(
                 text: 'nouhben',
                 imageURL:
                     'https://img.icons8.com/cotton/64/000000/whatsapp--v4.png',
-                color: Color(0xffE8F0F9),
+                color: Color(0xffE4FFC7),
+                onPress: () {},
               ),
             ],
           ),
