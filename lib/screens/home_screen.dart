@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            //TopSection(),
+            TopSection(),
             // SizedBox(height: kDefaultPadding * 2),
             // AboutSection(),
             // ServiceSection(),
@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             // SizedBox(height: kDefaultPadding * 2),
             // TestemonialSection(),
             // SizedBox(height: kDefaultPadding * 2),
-            ContactSection(),
+            //ContactSection(),
           ],
         ),
       ),

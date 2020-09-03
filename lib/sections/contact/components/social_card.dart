@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:portfolioweb/constants.dart';
 import 'package:portfolioweb/size_config.dart';
 

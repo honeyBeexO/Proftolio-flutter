@@ -4,6 +4,7 @@ import 'package:portfolioweb/constants.dart';
 import 'package:portfolioweb/sections/top/components/logo_and_blur_box.dart';
 import 'package:portfolioweb/sections/top/components/menu.dart';
 import 'package:portfolioweb/sections/top/components/person_pic.dart';
+import 'package:portfolioweb/size_config.dart';
 
 class TopSection extends StatelessWidget {
   @override
@@ -16,24 +17,31 @@ class TopSection extends StatelessWidget {
       decoration: BoxDecoration(
         color: Color(0xff69A2B5),
         image: DecorationImage(
-          image: AssetImage('assets/images/background.png'),
+          image: AssetImage('assets/images/lime-483.png'),
           fit: BoxFit.cover,
         ),
       ),
       child: Container(
         margin: EdgeInsets.only(top: kDefaultPadding),
-        width: 1200.0,
+        width: getProportionateScreenWidth(1000.0),
         child: Stack(
           children: [
             LogoAndBlurBox(size: _size),
+            SizeConfig.screenWidth > 600
+                ? Positioned(
+                    bottom: 80.0,
+                    right: 0.0,
+                    child: PersonPic(),
+                  )
+                : SizedBox(width: 2),
             Positioned(
-              bottom: 20.0,
               right: 0.0,
-              child: PersonPic(),
-            ),
-            Positioned(
+              left: 0.0,
               bottom: 0.0,
-              child: Menu(),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Menu(),
+              ),
             ),
           ],
         ),

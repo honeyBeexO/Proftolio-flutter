@@ -31,8 +31,10 @@ class _MenuState extends State<Menu> {
           boxShadow: [
             kDefaultShadow,
           ]),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Wrap(
+        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        alignment: WrapAlignment.spaceBetween,
+        runAlignment: WrapAlignment.spaceAround,
         children: List.generate(
           _menuItems.length,
           (index) => _buildMenuItem(index),

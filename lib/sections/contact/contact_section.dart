@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:portfolioweb/constants.dart';
 import 'package:portfolioweb/sections/contact/components/contact_box.dart';
 import 'package:portfolioweb/sections/service/components/section_title.dart';
