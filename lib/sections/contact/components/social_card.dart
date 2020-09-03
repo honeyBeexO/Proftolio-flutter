@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:portfolioweb/constants.dart';
 
 class SocialCard extends StatefulWidget {
@@ -49,8 +50,13 @@ class _SocialCardState extends State<SocialCard> {
           ),
           child: Row(
             children: [
-              Image.asset(
-                this.widget.imageURL ?? 'images/email.png',
+              // Image.asset(
+              //   this.widget.imageURL ?? 'images/email.png',
+              //   width: 80.0,
+              //   height: 80.0,
+              // ),
+              SvgPicture.asset(
+                this.widget.imageURL,
                 width: 80.0,
                 height: 80.0,
               ),

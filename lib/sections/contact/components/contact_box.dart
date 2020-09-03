@@ -28,18 +28,18 @@ class ContactBox extends StatelessWidget {
             children: [
               SocialCard(
                 text: 'nouhben',
-                imageURL: 'images/skype.png',
+                imageURL: 'assets/icons/github.svg',
                 color: Color(0xffD9FFFC),
                 onPress: () {},
               ),
               SocialCard(
                 text: 'nouhben',
-                imageURL: 'images/whatsapp.png',
+                imageURL: 'assets/icons/whatsapp.svg',
                 color: Color(0xffE4FFC7),
               ),
               SocialCard(
                 text: 'nouhben',
-                imageURL: 'images/messanger.png',
+                imageURL: 'assets/icons/messenger.svg',
                 color: Color(0xffE8F0F9),
               ),
             ],
