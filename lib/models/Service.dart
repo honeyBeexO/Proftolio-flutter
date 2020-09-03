@@ -16,22 +16,22 @@ class Service {
 List<Service> services = [
   Service(
       id: 1,
-      title: 'Graphic Design',
+      title: 'Mobile Apps',
       color: Color(0xffD9FFFC),
-      imageURL: 'images/graphic.png'),
+      imageURL: 'assets/images/graphic.png'),
   Service(
       id: 2,
-      title: 'Web Design',
+      title: 'Web Apps',
       color: Color(0xffFFE4C7),
       imageURL: 'images/desktop.png'),
   Service(
       id: 3,
       title: 'UI Design',
       color: Color(0xffFFF3DD),
-      imageURL: 'images/ui.png'),
+      imageURL: 'assets/images/ui.png'),
   Service(
       id: 4,
       title: 'Other Stuff',
       color: Color(0xffFFE0E0),
-      imageURL: 'images/graphic.png'),
+      imageURL: 'assets/images/graphic.png'),
 ];

@@ -50,16 +50,21 @@ class _SocialCardState extends State<SocialCard> {
           ),
           child: Row(
             children: [
+              Image.network(
+                widget.imageURL,
+                height: 80,
+                width: 80,
+              ),
               // Image.asset(
-              //   this.widget.imageURL ?? 'images/email.png',
+              //   this.widget.imageURL ?? 'assets/images/email.png',
               //   width: 80.0,
               //   height: 80.0,
               // ),
-              SvgPicture.asset(
-                this.widget.imageURL,
-                width: 80.0,
-                height: 80.0,
-              ),
+              // SvgPicture.asset(
+              //   this.widget.imageURL,
+              //   width: 80.0,
+              //   height: 80.0,
+              // ),
               SizedBox(width: kDefaultPadding),
               Text(this.widget.text ?? 'nouhben/')
             ],

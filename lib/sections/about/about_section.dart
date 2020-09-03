@@ -39,13 +39,13 @@ class AboutSection extends StatelessWidget {
             children: [
               MyOutlineButton(
                 text: 'Hire Me!',
-                imageURL: 'images/hand.png',
+                imageURL: 'assets/images/hand.png',
                 onPress: () {},
               ),
               SizedBox(width: kDefaultPadding * 1.5),
               DefaultButton(
                 text: 'Download CV!',
-                imageURL: 'images/download.png',
+                imageURL: 'assets/images/download.png',
                 onTap: () {
                   print('Getting hired...');
                 },
