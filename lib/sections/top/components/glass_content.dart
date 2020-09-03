@@ -36,11 +36,13 @@ class GlassContent extends StatelessWidget {
                     height: 1.5,
                     color: Colors.white),
               ),
-              Text('Web & Mobile apps dev',
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline4
-                      .copyWith(color: Colors.white)),
+              Text(
+                'Web & Mobile apps dev',
+                style: Theme.of(context)
+                    .textTheme
+                    .headline4
+                    .copyWith(color: Colors.white),
+              ),
             ],
           ),
         ),

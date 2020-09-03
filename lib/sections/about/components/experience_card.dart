@@ -38,10 +38,11 @@ class ExperienceCard extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 100.0,
                     fontWeight: FontWeight.bold,
-                    foreground: Paint()
-                      ..style = PaintingStyle.stroke
-                      ..strokeWidth = 6.0
-                      ..color = Color(0xffDFA3FF).withOpacity(0.5),
+                    // foreground: Paint()
+                    //   ..style = PaintingStyle.stroke
+                    //   ..strokeWidth = 6.0,
+                    // //..color = Color(0xffDFA3FF).withOpacity(0.5),
+                    color: Color(0xffDFA3FF).withOpacity(0.5),
                     shadows: [
                       BoxShadow(
                         offset: Offset(0.0, 5.0),

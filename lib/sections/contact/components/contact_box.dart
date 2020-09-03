@@ -30,6 +30,7 @@ class ContactBox extends StatelessWidget {
                 text: 'nouhben',
                 imageURL: 'images/skype.png',
                 color: Color(0xffD9FFFC),
+                onPress: () {},
               ),
               SocialCard(
                 text: 'nouhben',
