@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolioweb/constants.dart';
+import 'package:portfolioweb/size_config.dart';
 
 class Menu extends StatefulWidget {
   @override
@@ -19,7 +20,7 @@ class _MenuState extends State<Menu> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints(maxWidth: 1110.0),
+      constraints: BoxConstraints(maxWidth: SizeConfig.screenWidth),
       height: 100.0,
       padding: EdgeInsets.symmetric(horizontal: kDefaultPadding * 2.5),
       decoration: BoxDecoration(

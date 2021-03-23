@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolioweb/components/default_button.dart';
 import 'package:portfolioweb/constants.dart';
 import 'package:portfolioweb/sections/contact/components/social_card.dart';
+import 'package:portfolioweb/services/networking.dart';
 import 'package:portfolioweb/size_config.dart';
 
 class ContactBox extends StatelessWidget {
@@ -40,7 +41,11 @@ class ContactBox extends StatelessWidget {
                 imageURL:
                     'https://img.icons8.com/cotton/64/000000/facebook-messenger--v4.png',
                 color: Color(0xffD9FFFC),
-                onPress: () {},
+                onPress: () async {
+                  await Networking.launchURL(
+                    url: 'https://web.facebook.com/messages/t/thescen',
+                  );
+                },
               ),
               SocialCard(
                 text: 'nouhben',

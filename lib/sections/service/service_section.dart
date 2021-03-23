@@ -17,8 +17,10 @@ class ServiceSection extends StatelessWidget {
             title: 'Service Offerings',
             subTitle: 'My strength arenas',
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Wrap(
+            spacing: kDefaultPadding / 2,
+            runSpacing: kDefaultPadding / 2,
+            alignment: WrapAlignment.spaceBetween,
             children: List.generate(
               services.length,
               (index) => ServiceCard(

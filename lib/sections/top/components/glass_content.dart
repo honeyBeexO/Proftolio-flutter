@@ -6,7 +6,7 @@ import 'package:portfolioweb/size_config.dart';
 
 class GlassContent extends StatelessWidget {
   final Size size;
-  GlassContent({@required this.size});
+  GlassContent({this.size});
 
   @override
   Widget build(BuildContext context) {

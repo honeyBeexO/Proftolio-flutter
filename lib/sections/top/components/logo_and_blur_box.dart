@@ -4,7 +4,7 @@ import 'package:portfolioweb/sections/top/components/glass_content.dart';
 class LogoAndBlurBox extends StatelessWidget {
   const LogoAndBlurBox({
     Key key,
-    @required Size size,
+    Size size,
   })  : _size = size,
         super(key: key);
 

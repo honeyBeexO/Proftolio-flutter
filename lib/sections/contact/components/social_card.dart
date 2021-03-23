@@ -20,7 +20,7 @@ class SocialCard extends StatefulWidget {
 }
 
 class _SocialCardState extends State<SocialCard> {
-  Duration _duration = Duration(microseconds: 200);
+  Duration _duration = Duration(milliseconds: 200);
   bool _isHovered = false;
   //1- Animated container
   //2- Inkwell

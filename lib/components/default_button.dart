@@ -12,8 +12,8 @@ class DefaultButton extends StatelessWidget {
     return FlatButton(
       onPressed: this.onTap,
       padding: EdgeInsets.symmetric(
-        vertical: kDefaultPadding,
-        horizontal: kDefaultPadding * 2.5,
+        vertical: 16.0,
+        horizontal: 25.0,
       ),
       color: Color(0xFFE8F0F9),
       shape: RoundedRectangleBorder(

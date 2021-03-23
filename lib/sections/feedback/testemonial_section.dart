@@ -18,8 +18,9 @@ class TestemonialSection extends StatelessWidget {
             color: Color(0xff00b1ff),
           ),
           SizedBox(height: kDefaultPadding),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Wrap(
+            spacing: kDefaultPadding,
+            runSpacing: kDefaultPadding,
             children: List.generate(
               testemonilas.length,
               (index) => TestemonialCard(
