@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolioweb/constants.dart';
 import 'package:portfolioweb/sections/about/about_section.dart';
@@ -13,20 +14,60 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text('Home'),
+        backgroundColor: Colors.black,
+        title: Text(
+          'Home',
+          style: TextStyle(color: Colors.white),
+        ),
+        automaticallyImplyLeading: true,
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.grid_on,
+              color: Colors.white,
+              size: 48.0,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.grid_on,
+              color: Colors.white,
+              size: 48.0,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.grid_on,
+              color: Colors.white,
+              size: 48.0,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(
+              CupertinoIcons.circle_grid_3x3_fill,
+              color: Colors.white,
+              size: 48.0,
+            ),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: ListView(
         children: [
-          //TopSection(),
-          //SizedBox(height: kDefaultPadding * 2),
+          TopSection(),
+          SizedBox(height: kDefaultPadding * 2),
           AboutSection(),
-          //ServiceSection(),
-          //RecentWorkSection(),
-          //SizedBox(height: kDefaultPadding * 2),
-          //TestemonialSection(),
-          //SizedBox(height: kDefaultPadding * 2),
-          //ContactSection(),
+          ServiceSection(),
+          RecentWorkSection(),
+          SizedBox(height: kDefaultPadding * 2),
+          TestemonialSection(),
+          SizedBox(height: kDefaultPadding * 2),
+          ContactSection(),
         ],
       ),
     );
